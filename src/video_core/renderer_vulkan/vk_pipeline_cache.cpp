@@ -267,7 +267,7 @@ std::unique_ptr<GraphicsPipeline> PipelineCache::CreateGraphicsPipeline() {
     }
 
     if (regs.color_control.mode == Liverpool::ColorControl::OperationMode::FmaskDecompress) {
-        // TODO: check for a valid MRT1 to promote the draw to the resolve pass.
+        // TODO: check for a valid MRT1 to promote the draw to the resolve pass. 
         LOG_TRACE(Render_Vulkan, "FMask decompression pass skipped");
         return {};
     }
